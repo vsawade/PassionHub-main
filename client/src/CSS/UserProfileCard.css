@@ -1,0 +1,42 @@
+/* UserProfileCard.css */
+
+.user-profile-card {
+    border-radius: 10px !important;
+    border: solid 1px rgb(182, 182, 182);
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 3%;
+
+  }
+  
+  hr{
+    height: 1px;
+    width: 100%;
+    background: rgb(161, 161, 161);
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .profile-avatar {
+    width: 120px !important;
+    height: 120px !important;
+    margin-top: -50px;
+    border: 2px solid #fff;
+  }
+  
+  .stats-container {
+    margin-top: 16px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  

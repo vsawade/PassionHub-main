@@ -1,0 +1,12 @@
+{
+    "name": "final-project-overflow",
+    "version": "1.0.0",
+    "description": "PassionHub",
+    "scripts": {
+        "server": "cd server/app && npm start",
+        "client": "cd client && npm start"
+    },
+    "dependencies": {
+        "multer": "^1.4.5-lts.1"
+    }
+}

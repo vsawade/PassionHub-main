@@ -1,0 +1,79 @@
+/* GroupCard.css */
+
+.group-card {
+  width: 85%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3vh;
+  background-color: white;
+  border: solid 2px rgb(247, 247, 247);
+  padding: 17px;
+}
+
+.group-card-image {
+  height: 200px;
+  background: round;
+  border-radius: 10px;
+}
+
+.group-details {
+  padding: 0px 0 0 5px;
+  text-align: left;
+}
+
+.group-details h2 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: left;
+  height: 10vh;
+}
+
+.group-description {
+  font-size: 18px;
+  height: 10vh;
+  overflow-x: hidden;
+}
+
+.membership-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-count-tag {
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.member-count {
+  font-size: 4vmin;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.membership-type {
+  font-weight: bold;
+  padding: 10px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  
+}
+.membership-type.paid{
+  background: linear-gradient(to right, #ab2f39, #e06363) !important  ; 
+  width: 150px;
+  height: 50px;
+  font-weight: 18px;
+}
+.membership-type.free{
+  background: linear-gradient(to right, #9d52f3, #6ca7f7) !important; 
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+}
+
+
+
+
+  

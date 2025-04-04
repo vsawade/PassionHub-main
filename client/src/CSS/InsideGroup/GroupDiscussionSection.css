@@ -1,0 +1,32 @@
+/* DiscussionSection.css */
+
+.discussion-section {
+    margin-top: 20px;
+    text-align: -webkit-center;
+  }
+  
+  .group-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .mygroup-card {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .group-name {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,80 @@
+openapi: 3.1.0
+info:
+  title: PassionHub API - Login
+  description: REST API for PassionHub web application's login functionality.
+  version: "v1.0"
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/login:
+    post:
+      operationId: user-login
+      summary: User Login
+      description: Log in a user with a username and password.
+      parameters:
+        - name: username
+          in: query
+          description: The username of the user.
+          required: true
+          schema:
+            type: string
+            examples: ["john_doe"]
+        - name: password
+          in: query
+          description: The password of the user.
+          required: true
+          schema:
+            type: string
+            examples: ["password123"]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  examples: ["john_doe"]
+                password:
+                  type: string
+                  examples: ["password123"]
+      responses:
+        "200":
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: true
+                  token:
+                    type: string
+                    examples: ["jwt_token_here"]
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: false
+                  message:
+                    type: string
+                    examples: ["Invalid request body or parameters"]
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: false
+                  message:
+                    type: string
+                    examples: ["Invalid username or password"]

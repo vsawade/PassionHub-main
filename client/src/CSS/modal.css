@@ -1,0 +1,15 @@
+.modal-container{
+    margin-top: 20px;
+    border-top: solid 1px rgb(201, 201, 201);
+}
+
+.modal-content button{
+    padding: 1vmin 4vmin;
+    margin: 1vmin;
+    border-radius: 20px;
+    border: solid 1px rgb(157, 157, 157);
+    font-size: 1.5vmin;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 80, 70);
+}

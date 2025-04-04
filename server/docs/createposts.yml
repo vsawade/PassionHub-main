@@ -1,0 +1,131 @@
+openapi: 3.1.0
+info:
+  title: PassionHub API - Login
+  description: REST API for PassionHub web application's login functionality.
+  version: "v1.0"
+servers:
+  - url: http://localhost:8080
+paths:
+ /api/posts:
+  post:
+    summary: Create Post
+    description: Create a new post in a group.
+    parameters:
+      - name: group_id
+        in: query
+        description: ID of the group
+        required: true
+        schema:
+          type: string
+          examples:
+            - value: group_id_here
+      - name: authorization
+        in: header
+        description: Access token for authentication
+        required: true
+        schema:
+          type: string
+          examples:
+            - value: "Bearer <access_token>"
+    requestBody:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              groupId:
+                type: string
+                examples: ["group_id_here"]
+              content:
+                type: string
+                examples: ["This is a great post!"]
+    responses:
+      '200':
+        description: Post created successfully
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  default: true
+                message:
+                  type: string
+                  examples: ["Post created successfully"]
+      '400':
+        description: Bad Request
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  default: false
+                error:
+                  type: object
+                  properties:
+                    code:
+                      type: string
+                      examples: ["invalid_input"]
+                    message:
+                      type: string
+                      examples: ["Invalid input data"]
+      '401':
+        description: Unauthorized
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  default: false
+                error:
+                  type: object
+                  properties:
+                    code:
+                      type: string
+                      examples: ["unauthorized"]
+                    message:
+                      type: string
+                      examples: ["Authentication required"]
+      '404':
+        description: Not Found
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  default: false
+                error:
+                  type: object
+                  properties:
+                    code:
+                      type: string
+                      examples: ["resource_not_found"]
+                    message:
+                      type: string
+                      examples: ["Group not found"]
+      '500':
+        description: Internal Server Error
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  default: false
+                error:
+                  type: object
+                  properties:
+                    code:
+                      type: string
+                      examples: ["internal_error"]
+                    message:
+                      type: string
+                      examples: ["An unexpected error occurred on the server"]

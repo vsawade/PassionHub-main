@@ -1,0 +1,28 @@
+/* GroupAboutSection.css */
+
+.about-section {
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    margin-top: 40px;
+    width: 20vw;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.about-section h1{
+  text-align: center;
+  font-size: 4vmin;
+  margin: 0 auto;
+}
+
+.aboutContent{
+  margin: 0 auto;
+  margin-bottom: 2vmin;
+  font-size: 3vmin;
+}
+.aboutTitles{
+  color: rgb(122, 150, 198);
+  margin: 0 auto;
+}

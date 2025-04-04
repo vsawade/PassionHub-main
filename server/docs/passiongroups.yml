@@ -1,0 +1,124 @@
+openapi: 3.0.3
+info:
+  title: PassionHub API
+  description: REST API for PassionHub - A platform for connecting people with shared interests
+  version: 'v1.0'
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/passion-groups:
+    post:
+      operationId: create-passion-group
+      summary: Create a new Passion Group
+      requestBody:
+        description: Passion Group details
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PassionGroupInput"
+      responses:
+        '201':
+          description: Passion Group created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PassionGroup"
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '401':
+          description: Unauthenticated request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /api/passion-groups/{group_id}/join:
+    post:
+      operationId: join-passion-group
+      summary: Join an existing Passion Group
+      parameters:
+        - name: group_id
+          in: path
+          required: true
+          description: ID of the Passion Group to join
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Joined Passion Group successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '401':
+          description: Unauthenticated request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    PassionGroupInput:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the Passion Group
+        description:
+          type: string
+          description: Description of the Passion Group
+        topics:
+          type: array
+          items:
+            type: string
+          description: List of topics associated with the Passion Group
+
+    PassionGroup:
+      type: object
+      properties:
+        groupId:
+          type: string
+          description: Unique identifier for the Passion Group
+        name:
+          type: string
+          description: Name of the Passion Group
+        description:
+          type: string
+          description: Description of the Passion Group
+        topics:
+          type: array
+          items:
+            type: string
+          description: List of topics associated with the Passion Group
+
+    Success:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Indicates if the operation was successful
+        message:
+          type: string
+          description: Success message
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code
+        message:
+          type: string
+          description: Error message

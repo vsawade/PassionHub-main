@@ -1,0 +1,83 @@
+.pastel-color-selected-1 {
+	background-color: #edafb8 !important;
+	border-color:  #edafb8 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-selected-2 {
+	background-color: #f7e1d7 !important;
+	border-color:  #f7e1d7 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-selected-3 {
+	background-color: #dedbd2 !important;
+	border-color:  #dedbd2 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-selected-4 {
+	background-color: #b0c4b1 !important;
+	border-color:  #b0c4b1 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-selected-5 {
+	background-color: #bdbbec !important;
+	border-color:  #bdbbec !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-unselected-1 {
+	border-color:  #edafb8 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-unselected-2 {
+	border-color:  #f7e1d7 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-unselected-3 {
+	border-color:  #dedbd2 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-unselected-4 {
+	border-color:  #b0c4b1 !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.pastel-color-unselected-5 {
+	border-color:  #bdbbec !important;
+	border-width: 3px !important;
+	color: #000 !important;
+}
+
+.button-width-large {
+	width: 16em;
+}
+
+.button-width-medium {
+	width:  13em;
+}
+
+.button-width-small {
+	width:  10em;
+}
+
+.preference-button {
+	maxWidth: '30px';
+	maxHeight: '30px';
+	minWidth: '30px';
+	minHeight: '30px';
+}

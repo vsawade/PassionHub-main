@@ -1,0 +1,110 @@
+/* Post.css */
+
+.post {
+    width: 86%;
+    margin: 20px 35px ;
+    border: 1px solid #dddcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 2.5vmin;
+  }
+  .post-image-placeholder,.group-image-placeholder{
+    font-size: 10px;
+    margin: 10px;
+  }
+  
+  
+  .post-image {
+    width: 97%;
+    height: 350px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+  
+  .caption {
+    padding: 0 10px;
+    font-size: 2.5vmin;
+    font-weight: 500;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    background-color: #f4f4f4;
+  }
+  .actions .upvote-button {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745; /* Green color for upvoted */
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  .upvote-icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .actions .upvote-button.upvoted {
+    background-color: #a9a9a9; /* Light green color for upvoted */
+    cursor: not-allowed;
+  }
+  .actions button {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comment-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .comment-section input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .comment-section button {
+    width: 60px;
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+.view-post-details{
+  padding: 10px 20px;
+  background: #007bff;
+  border-radius: 7px;
+  font-size: 15px;
+  color:white;
+  font-weight: 600;
+}
+  

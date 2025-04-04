@@ -1,0 +1,22 @@
+/* CommentSection.css */
+
+.comment-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .comment-section input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .comment-section button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+ 

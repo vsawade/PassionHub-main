@@ -1,0 +1,19 @@
+.maingrid-container{
+    background: rgb(236, 238, 245);
+    font-family: 'Poppins', sans-serif;
+    padding: 1vmin 0;
+}
+#main-content{
+    padding: 3vmin 5vmin;
+}
+#recommendationsHeader{
+    padding: 14vmin 0 0vmin 10vmin;
+}
+#recommendationsHeader h2{
+    margin: 0;
+    font-size: 4vmin;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(33, 65, 109);
+}
+

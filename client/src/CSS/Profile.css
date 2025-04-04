@@ -1,0 +1,112 @@
+/* Profile.css */
+
+.profile-page {
+    height: 100vh;
+    background: #f9fbfc;
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+.profile-details{
+    display: flex;
+    margin-top: 30px;
+}
+.left-side {
+  margin-right: 7vw;
+  text-align: left;
+  width: 30vw;
+}
+.right-side {
+  margin-left: 20px;
+  width: 30vw;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+strong{
+    margin-right: 20px;
+}
+.email-section,
+.votes-section,
+.credits-section,
+.balance-section{
+  font-size: 3.5vmin;
+  font-family: sans-serif;
+  margin: 50px 0px;
+  display: block;
+  color: rgb(86, 132, 206);
+}
+
+.profile-input{
+  border-radius: 8px;
+  margin: 0;
+  border: solid 1px rgb(204, 204, 204);
+  display: block;
+  padding: 1vmin;
+}
+
+  
+  .label {
+    /* display: flex; */
+    text-align: center;
+    width: 100%;
+    height: 4.5vh;
+    border-radius: 50px;
+    font-size: 3vmin;
+    font-weight: bold;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    
+  }
+
+.circle {
+    height: 150px;
+  
+    border-radius: 50%;
+    margin:0px 30px;
+  }
+
+  
+  
+  
+  .upload-circle {
+    width: 27vw;
+    height: 30vh;
+  }
+  
+  .user-profile-image {
+    width: 27vw;
+    height: 30vw;
+   
+    border-radius: 2%;
+    border: solid 1px rgb(193, 193, 193);
+  }
+  .upload-photo{
+    margin-top: 30vh;
+  }
+
+  .imgSave{
+    text-align: center;
+    background-color: rgb(70, 198, 70);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 10px 5.5vmin;
+    border: none;
+    border-radius: 20px;
+    margin: 1vmin 0;
+  }
+  
+  .heading{
+    color: rgb(105, 105, 105);
+    font-size: 3vmin;
+  }
+  .internationalization{
+    margin-top: 20px;
+  }

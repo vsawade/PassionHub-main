@@ -1,0 +1,103 @@
+openapi: 3.1.0
+info:
+  title: PassionHub API - Register
+  description: REST API for PassionHub web application's register functionality.
+  version: "v1.0"
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/register:
+    post:
+      summary: Register User
+      description: Register a new user with a username, password, and email.
+      parameters:
+        - name: client_id
+          in: query
+          required: true
+          schema:
+            type: string
+            examples: 
+              ["client_id"]
+        - name: client_secret
+          in: query
+          required: true
+          schema:
+            type: string
+            examples: 
+              ["client_secret"]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  examples: 
+                    ["john_doe"]
+                password:
+                  type: string
+                  examples: 
+                    ["password123"]
+                email:
+                  type: string
+                  format: email
+                  examples: 
+                    ["john.doe@example.com"]
+      responses:
+        '200':
+          description: Registration successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: true
+                  message:
+                    type: string
+                    examples: 
+                      ["Registration successful"]
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: false
+                  message:
+                    type: string
+                    examples:
+                      ["Bad Request - Invalid input data"]
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: false
+                  message:
+                    type: string
+                    examples: 
+                      ["Unauthorized - Invalid client credentials"]
+        '409':
+          description: Conflict
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    default: false
+                  message:
+                    type: string
+                    examples: 
+                      ["Conflict - Username or email already exists"]

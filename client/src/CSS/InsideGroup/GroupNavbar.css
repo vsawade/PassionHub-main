@@ -1,0 +1,20 @@
+/* Navbar.css */
+
+.groupnavbar {
+    display: flex;
+  }
+  
+  .groupnavbar button {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .groupnavbar button.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  

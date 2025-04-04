@@ -1,0 +1,57 @@
+/* MyGroupsComponent.css */
+
+.group-members-container {
+  width: 20vw;
+  margin: 40px 0px;
+  padding: 5px 20px 20px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  background-color: #f4f4f4;
+}
+
+.member-list {
+  margin-top: 20px;
+}
+
+.member-list h1 {
+  font-size: 4vmin;
+  color: #3f4752;
+  margin-top: 0;
+}
+
+.groupmember-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.mygroupmember-card {
+  display: flex;
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  color: rgb(250, 250, 250);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #2361a8 ;
+}
+
+.groupmember-image {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.groupmember-name {
+  font-size: 2vmin;
+  margin: 10px;
+}

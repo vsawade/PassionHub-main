@@ -1,0 +1,29 @@
+.navbar-right-panel{
+    margin-left: auto;
+    display: flex;
+}
+
+.logo-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.walletbn{
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-left: 2rem !important;
+    font-weight: bold !important;
+}
+
+.walletbn:hover{
+    color: #007bff;
+}
+
+.walletbn img{
+    margin-right: 5px;
+}
+.avatarimg{
+    width: 50px !important;
+    height: 50px !important;
+}

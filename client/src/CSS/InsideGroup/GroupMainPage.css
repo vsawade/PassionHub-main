@@ -1,0 +1,49 @@
+/* GroupPage.css */
+body{
+  background: #f8f8f8  ;
+}
+.group-name{
+  font-size: 4vmin;
+  font-weight: 600;
+  color: rgb(86, 92, 90);
+}
+.group-page {
+    text-align: center;
+    padding: 10vmin 0;
+  }
+  .group-content{
+    padding: 3vmin;
+    display: flex;
+  }
+  
+  .group-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .joined-group {
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(54, 198, 128);
+    color: #f6f4f4;
+    border: none;
+    border-radius: 10px;
+    font-size: 2vmin;
+  }
+  
+  .groupnameflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vmin 5vmin;
+  }
+
+  .groupnameflex h2{
+    font-size: 20px;
+  }
+  .divider{
+    border: none;
+    background-color: #d7d6d6;
+  }

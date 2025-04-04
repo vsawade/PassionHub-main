@@ -1,0 +1,41 @@
+/* MyGroupsComponent.css */
+
+.passion-groups-container {
+    width: 66%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px rgb(182, 182, 182); 
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+
+  
+  .create-group-btn {
+    width: 100%;
+    background-color: rgb(43, 59, 93);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 50px;
+    font-weight: 700;
+  }
+
+  
+  .your-groups h2 {
+    font-size: 3vmin;
+    font-weight: 300;
+  }
+  
+  .listofmygroup-image {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 20%;
+    margin-right: 2vmin;
+  }
+  
+ 

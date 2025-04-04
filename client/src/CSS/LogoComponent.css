@@ -1,0 +1,25 @@
+/* LogoComponent.css */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo-image {
+    width: 100%; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .passion-hub {
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+  }
+  
+  .tagline {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin: 0;
+    color: #888; /* Adjust the color as needed */
+  }
+  
