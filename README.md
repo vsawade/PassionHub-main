@@ -94,9 +94,4 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 
-## Members Contact Details
 
-- Palaniselvam Shyam Sundar (palaniselvam.s@northeastern.edu) 
-- Niraj Komalkant Malpani(malpani.n@northeastern.edu)
-- Prashanth Baskar(baskar.pr@northeastern.edu)
-- Sahil Mutha (mutha.sa@northeastern.edu)
